@@ -205,7 +205,7 @@ function ParamManager() {
         });
         currView = currView.join("/");
 
-        var newHash = currView + "/" + self.paramString;
+        var newHash = "/" + currView + "/" + self.paramString;
 
         var url = (location.pathname + location.search + "#" + newHash);
         var fullUrl = (location.protocol + "//" + location.hostname + location.pathname + location.port + location.search + newHash); //when using file:/// you need to reconstruct the entire url
